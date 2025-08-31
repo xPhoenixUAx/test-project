@@ -1,0 +1,12 @@
+@layer utilities {
+  .uicard-default-bg {
+    background: #0c0117;
+  }
+  .uicard-default-shadow {
+    box-shadow: inset 4px 6px 10px 4px rgba(167, 93, 243, 0.2);
+  }
+  .uicard-white {
+    background: #ffffff;
+    box-shadow: inset 4px 6px 10px 4px rgba(167, 93, 243, 0.2);
+  }
+}

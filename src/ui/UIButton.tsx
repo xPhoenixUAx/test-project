@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 interface UIButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  variant?: "primary" | "secondary" | "black";
+  variant?: "primary" | "secondary" | "blackbutton";
   className?: string;
   sticker?: React.ReactNode;
 }
@@ -20,12 +20,15 @@ export default function UIButton({
       <button
         className={clsx(
           "ui-btn px-8 py-3 rounded-full font-bold text-lg shadow-lg transition-transform duration-200 active:scale-95 w-full",
-          variant === "primary"
-            ? "bg-gradient-to-r from-[#5bdbfd] via-[#7375ff] to-[#e56f8c] text-white hover:brightness-110"
-            : "bg-white text-[#181a2a] border border-[#7375ff] hover:bg-[#f3f4fa]",
+          variant === "primary" &&
+            "bg-gradient-to-r from-[#5bdbfd] via-[#7375ff] to-[#e56f8c] text-white hover:brightness-110",
           variant === "secondary" &&
             "bg-[#fff] text-[#181a2a] border border-[#7375ff] hover:bg-[#f3f4fa]",
-          variant === "black" &&
+          variant === "blackbutton" &&
+            "bg-black text-white border border-transparent hover:bg-opacity-80",
+          variant === "secondary" &&
+            "bg-[#fff] text-[#181a2a] border border-[#7375ff] hover:bg-[#f3f4fa]",
+          variant === "blackbutton" &&
             "bg-black text-white border border-transparent hover:bg-opacity-80",
           className
         )}

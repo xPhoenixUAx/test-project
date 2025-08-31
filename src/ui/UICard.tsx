@@ -1,7 +1,8 @@
+import "@/ui/uicard-custom.css";
 import React from "react";
 import clsx from "clsx";
 
-export type UICardVariant = "default" | "gradient" | "bordered";
+export type UICardVariant = "default" | "gradient" | "whitecard" | "blackcard";
 
 interface UICardProps {
   title: string;
@@ -21,16 +22,17 @@ export default function UICard({
   return (
     <div
       className={clsx(
-        "ui-card p-6 rounded-2xl shadow-md transition-all",
-        variant === "default" && "bg-white text-[#181a2a]",
+        "ui-card p-8 rounded-2xl shadow-md transition-all h-[466px]",
+        variant === "default" &&
+          "uicard-default-bg uicard-default-shadow text-[#181a2a]",
         variant === "gradient" &&
           "bg-gradient-to-br from-[#5bdbfd] via-[#7375ff] to-[#e56f8c] text-white",
-        variant === "bordered" &&
-          "bg-white border-2 border-[#7375ff] text-[#181a2a]",
+        variant === "whitecard" && "uicard-white",
+        variant === "blackcard" && "bg-black text-white",
         className
       )}
     >
-      <h3 className="text-xl font-bold mb-2">{title}</h3>
+      <h3 className="text-[16px] uppercase font-bold pb-[32px]">{title}</h3>
       {description && (
         <p className="mb-4 text-base opacity-80">{description}</p>
       )}
