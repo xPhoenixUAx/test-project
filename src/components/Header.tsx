@@ -124,7 +124,6 @@ export default function Header() {
           FAQ
         </Link>
       </nav>
-      {/* Десктоп навігація (прихована на мобільних) */}
       <nav className="hidden md:flex items-center gap-4">
         <Link href="/structure" className="text-sm font-medium">
           Структура
@@ -142,7 +141,6 @@ export default function Header() {
           FAQ
         </Link>
       </nav>
-      {/* Оверлей для закриття меню */}
       {menuOpen && (
         <div
           className="fixed inset-0 bg-black/30 z-0 md:hidden"
