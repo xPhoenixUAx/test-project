@@ -10,6 +10,8 @@ interface UICardProps {
   children?: React.ReactNode;
   variant?: UICardVariant;
   className?: string;
+  titleClassName?: string;
+  titleAddon?: React.ReactNode;
 }
 
 export default function UICard({
@@ -18,6 +20,8 @@ export default function UICard({
   children,
   variant = "default",
   className = "",
+  titleClassName = "",
+  titleAddon,
 }: UICardProps) {
   return (
     <div
@@ -26,13 +30,22 @@ export default function UICard({
         variant === "default" &&
           "uicard-default-bg uicard-default-shadow text-[#181a2a]",
         variant === "gradient" &&
-          "bg-gradient-to-br from-[#5bdbfd] via-[#7375ff] to-[#e56f8c] text-white",
+          "bg-gradient-to-br from-[#5bdbfd] via-[#7375ff] to-[#773ef2] text-white",
         variant === "whitecard" && "uicard-white",
-        variant === "blackcard" && "bg-black text-white",
+        variant === "blackcard" &&
+          "bg-gradient-to-br from-[#5bdbfd] via-[#7375ff] to-[#6d32ec] shadow-[inset_4px_6px_10px_4px_rgba(167,93,243,0.2)] text-white",
         className
       )}
     >
-      <h3 className="text-[16px] uppercase font-bold pb-[32px]">{title}</h3>
+      <h3
+        className={clsx(
+          "text-[16px] uppercase font-bold pb-[32px] flex items-center justify-between",
+          titleClassName
+        )}
+      >
+        {title}
+        {titleAddon && <span>{titleAddon}</span>}
+      </h3>
       {description && (
         <p className="mb-4 text-base opacity-80">{description}</p>
       )}

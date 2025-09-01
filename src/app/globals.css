@@ -28,6 +28,19 @@
 }
 
 @layer utilities {
+  .uicard-default-bg {
+    background: linear-gradient(50deg, #1a3862 5%, #0b041a 50%, #320e50 100%);
+  }
+  .uicard-default-shadow {
+    box-shadow: inset 4px 6px 10px 4px rgba(167, 93, 243, 0.2);
+  }
+  .uicard-white {
+    background: #ffffff;
+    box-shadow: inset 4px 6px 10px 4px rgba(167, 93, 243, 0.2);
+  }
+  .uicard-gradient-bg {
+    box-shadow: inset 4px 6px 10px 4px rgba(167, 93, 243, 0.2);
+  }
   .container-mobile {
     @apply max-w-[430px] mx-auto px-[40px];
     .font-family {

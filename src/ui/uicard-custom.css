@@ -1,6 +1,6 @@
-@layer utilities {
+/* @layer utilities {
   .uicard-default-bg {
-    background: #0c0117;
+    background: linear-gradient(50deg, #1a3862 5%, #0b041a 50%, #320e50 100%);
   }
   .uicard-default-shadow {
     box-shadow: inset 4px 6px 10px 4px rgba(167, 93, 243, 0.2);
@@ -9,4 +9,7 @@
     background: #ffffff;
     box-shadow: inset 4px 6px 10px 4px rgba(167, 93, 243, 0.2);
   }
-}
+  .uicard-gradient-bg {
+    box-shadow: inset 4px 6px 10px 4px rgba(167, 93, 243, 0.2);
+  }
+} */
