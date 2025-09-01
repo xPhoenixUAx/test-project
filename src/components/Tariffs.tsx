@@ -83,7 +83,7 @@ export default function Tariffs() {
             {tariff.features.map((f, featureIdx) => (
               <li
                 key={typeof f === "string" ? f : `feature-${featureIdx}`}
-                className="flex items-center gap-2 mb-1"
+                className="flex items-center gap-2 mb-[14px]"
               >
                 <span className="mt-1">
                   <svg
@@ -108,7 +108,10 @@ export default function Tariffs() {
           <UIButton
             variant={tariff.buttonVariant}
             sticker={tariff.sticker}
-            className="w-full mt-auto font-semibold text-[14px]"
+            className={
+              "w-full font-semibold text-[14px]" +
+              (idx === 0 ? " mt-[110px]" : "")
+            }
           >
             {tariff.buttonText}
           </UIButton>

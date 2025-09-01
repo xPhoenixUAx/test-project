@@ -22,7 +22,7 @@ export default function UICard({
   return (
     <div
       className={clsx(
-        "ui-card p-8 rounded-2xl shadow-md transition-all h-[466px]",
+        "ui-card p-8 rounded-2xl shadow-md transition-all",
         variant === "default" &&
           "uicard-default-bg uicard-default-shadow text-[#181a2a]",
         variant === "gradient" &&
