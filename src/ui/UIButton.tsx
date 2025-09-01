@@ -33,7 +33,7 @@ export default function UIButton({
         {children}
       </button>
       {sticker && (
-        <span className="bg-[#ff4a77] absolute right-0 top-0 rounded-[50px]  text-sm text-white/80 flex items-center justify-center font-bold select-none pointer-events-none">
+        <span className="bg-[#ff4a77] absolute right-0 top-0 rounded-[50px] md:right-80  text-sm text-white/80 flex items-center justify-center font-bold select-none pointer-events-none">
           {sticker}
         </span>
       )}

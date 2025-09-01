@@ -74,7 +74,7 @@ const tariffs: Tariff[] = [
 
 export default function Tariffs() {
   return (
-    <section className="container-mobile py-10 grid gap-6 md:grid-cols-3">
+    <section className="container-mobile container-desktop py-10 grid gap-6 md:grid-cols-3">
       <h2 className="text-[24px] uppercase md:text-4xl font-bold mb-4 text-center w-full">
         Тарифы
       </h2>

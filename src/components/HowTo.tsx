@@ -4,7 +4,7 @@ import UIButton from "@/ui/UIButton";
 
 export default function HowTo() {
   return (
-    <section className="container-mobile py-[110px] px-[54px] section-border flex flex-col items-center text-center bg-custom-gradient mb-[48px]">
+    <section className="container-mobile container-desktop py-[110px] px-[54px] section-border flex flex-col items-center text-center bg-custom-gradient mb-[48px]">
       <h2 className="text-2xl md:text-4xl font-bold mb-4">
         Узнай, как создавать контент, который{" "}
         <span className="bg-gradient-to-r from-[#5bdbfd] via-[#7375ff] to-[#e56f8c] bg-clip-text text-transparent">
