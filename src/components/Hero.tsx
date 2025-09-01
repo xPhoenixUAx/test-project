@@ -22,7 +22,7 @@ export default function Hero() {
         height={500}
         priority
       />
-      <div className="-mt-20 md:-mt-24 flex flex-col items-center w-full px-4">
+      <div className="-mt-20 md:-mt-24 flex flex-col items-center ">
         <p className="text-2xl font-bold font-family md:text-base leading-tight gradient-text mb-2">
           От 0 до 100,000 за 90 дней
         </p>
@@ -38,12 +38,12 @@ export default function Hero() {
           <UIButton
             variant="secondary"
             sticker={
-              <span className="flex font-family line-height-[128%] items-center justify-center w-full h-full font-bold leading-none">
+              <span className="flex font-family line-height-[128%] items-center justify-center  font-bold leading-none w-[70px] h-[70px]">
                 <span className="text-[20px]">-5</span>
                 <span className="relative top-[-2px] text-[20px]">0%</span>
               </span>
             }
-            className="w-full h-[60px]"
+            className="w-full py-[19px] px-[96px"
           >
             Купить со скидкой
           </UIButton>

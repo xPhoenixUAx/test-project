@@ -26,10 +26,6 @@ export default function UIButton({
             "bg-[#fff] text-[#181a2a] border border-[#7375ff] hover:bg-[#f3f4fa]",
           variant === "blackbutton" &&
             "bg-black text-white border border-transparent hover:bg-opacity-80",
-          variant === "secondary" &&
-            "bg-[#fff] text-[#181a2a] border border-[#7375ff] hover:bg-[#f3f4fa]",
-          variant === "blackbutton" &&
-            "bg-black text-white border border-transparent hover:bg-opacity-80",
           className
         )}
         {...props}
@@ -37,7 +33,7 @@ export default function UIButton({
         {children}
       </button>
       {sticker && (
-        <span className="bg-[#ff4a77] absolute right-0 top-0 rounded-[50px] w-[60px] h-[60px] text-sm text-white/80 flex items-center justify-center font-bold select-none pointer-events-none">
+        <span className="bg-[#ff4a77] absolute right-0 top-0 rounded-[50px]  text-sm text-white/80 flex items-center justify-center font-bold select-none pointer-events-none">
           {sticker}
         </span>
       )}

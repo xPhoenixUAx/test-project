@@ -4,7 +4,7 @@ import UIButton from "@/ui/UIButton";
 
 export default function HowTo() {
   return (
-    <section className="container-mobile py-10 flex flex-col items-center text-center bg-gradient-to-br from-[#a45bfd] via-[#1c0937] to-[#946fe5]">
+    <section className="container-mobile py-[110px] px-[54px] section-border flex flex-col items-center text-center bg-custom-gradient mb-[48px]">
       <h2 className="text-2xl md:text-4xl font-bold mb-4">
         Узнай, как создавать контент, который{" "}
         <span className="bg-gradient-to-r from-[#5bdbfd] via-[#7375ff] to-[#e56f8c] bg-clip-text text-transparent">
@@ -16,12 +16,12 @@ export default function HowTo() {
       </p>
       <UIButton
         sticker={
-          <span className="flex font-family line-height-[128%] items-center justify-center w-full h-full font-bold leading-none">
+          <span className="flex font-family line-height-[128%] items-center justify-center w-[75px] h-[75px] font-bold leading-none">
             <span className="text-[20px]">-5</span>
             <span className="relative top-[-2px] text-[20px]">0%</span>
           </span>
         }
-        className="w-full max-w-xs"
+        className="w-full pl-[49px] pr-[96px] pt-[24px] pb-[24px]"
       >
         Купить со скидкой
       </UIButton>

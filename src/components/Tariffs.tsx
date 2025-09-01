@@ -1,8 +1,6 @@
-import "./tariffs-custom.css";
 import React from "react";
 import UICard, { UICardVariant } from "@/ui/UICard";
 import UIButton from "@/ui/UIButton";
-import "./tariffs-features-list.css";
 
 interface Tariff {
   title: string;
@@ -48,27 +46,7 @@ const tariffs: Tariff[] = [
     buttonText: "Купить",
     buttonVariant: "blackbutton",
     stickerSeller: (
-      <div
-        style={{
-          borderRadius: "18px",
-          width: "169px",
-          height: "42px",
-          background:
-            "linear-gradient(225deg, #5bdbfd 0%, #7375ff 50%, #946fe5 100%)",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          color: "#fff",
-          fontWeight: 700,
-          fontSize: "18px",
-          position: "absolute",
-          top: "-21px",
-          left: "50%",
-          transform: "translateX(-50%)",
-          zIndex: 10,
-          boxShadow: "0 2px 8px 0 rgba(115,117,255,0.15)",
-        }}
-      >
+      <div className="rounded-[18px] w-[169px] h-[42px] bg-gradient-to-br from-[#5bdbfd] via-[#7375ff] to-[#946fe5] flex items-center justify-center text-white font-bold text-[18px] absolute top-[-21px] left-1/2 -translate-x-1/2 z-10 shadow-[0_2px_8px_0_rgba(115,117,255,0.15)]">
         Best seller
       </div>
     ),
