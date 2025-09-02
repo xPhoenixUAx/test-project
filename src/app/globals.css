@@ -93,6 +93,14 @@
     -webkit-text-fill-color: transparent;
     color: transparent;
   }
+  @media (max-width: 768px) {
+    .bottom-line {
+      visibility: hidden;
+    }
+    .bottom-line-left {
+      visibility: hidden;
+    }
+  }
   .bottom-line {
     right: -60px;
     bottom: 30px;
@@ -113,6 +121,7 @@
     text-align: center;
     user-select: none;
   }
+
   .bottom-line-left {
     position: absolute;
     left: -110px;

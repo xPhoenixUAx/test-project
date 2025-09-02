@@ -75,10 +75,10 @@ const tariffs: Tariff[] = [
 export default function Tariffs() {
   return (
     <section className="container-mobile container-desktop py-10">
-      <h2 className="text-[24px] uppercase lg:text-4xl font-bold mb-4 text-center w-full">
+      <h2 className="text-[24px] uppercase lg:text-4xl font-bold mb-8 text-center w-full">
         Тарифы
       </h2>
-      <div className="grid gap-10 lg:grid-cols-3">
+      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
         {tariffs.map((tariff, idx) => (
           <UICard
             key={tariff.title}
@@ -158,7 +158,9 @@ export default function Tariffs() {
                 (idx === 0 ? " mt-[110px]" : "")
               }
             >
-              {tariff.buttonText}
+              <span className="block w-full text-center">
+                {tariff.buttonText}
+              </span>
             </UIButton>
           </UICard>
         ))}
