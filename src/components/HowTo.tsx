@@ -1,6 +1,6 @@
 import React from "react";
 
-import UIButton from "@/ui/UIButton";
+import UIButton from "@/ui/UIButtonWithModal";
 
 export default function HowTo() {
   return (

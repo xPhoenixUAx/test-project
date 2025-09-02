@@ -1,6 +1,6 @@
 import React from "react";
 import UICard, { UICardVariant } from "@/ui/UICard";
-import UIButton from "@/ui/UIButton";
+import UIButton from "@/ui/UIButtonWithModal";
 
 interface Tariff {
   title: string;

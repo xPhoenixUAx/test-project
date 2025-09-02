@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import menuIcon from "../../public/iconamoon_menu-burger-horizontal.svg";
-import UIButton from "@/ui/UIButton";
+import UIButton from "@/ui/UIButtonWithModal";
 
 const LANGS = [
   { code: "ru", label: "RU" },

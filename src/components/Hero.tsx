@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import heroImageMob from "../../public/hero-mob.jpg";
 import heroImageDesk from "../../public/hero-desk.jpg";
-import UIButton from "@/ui/UIButton";
+import UIButton from "@/ui/UIButtonWithModal";
 
 export default function Hero() {
   return (
