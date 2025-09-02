@@ -93,6 +93,49 @@
     -webkit-text-fill-color: transparent;
     color: transparent;
   }
+  .bottom-line {
+    right: -60px;
+    bottom: 30px;
+    width: 320px;
+    height: 65px;
+    background: linear-gradient(90deg, #5bdbfd 0%, #7375ff 50%, #e56f8c 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px 0 rgba(91, 219, 253, 0.15);
+    transform: rotate(325deg);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    user-select: none;
+  }
+  .bottom-line-left {
+    position: absolute;
+    left: -110px;
+    bottom: 90px;
+    width: 550px;
+    height: 45px;
+    background: linear-gradient(270deg, #5bdbfd 0%, #7375ff 50%, #e56f8c 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px 0 rgba(91, 219, 253, 0.15);
+    transform: rotate(-315deg);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    user-select: none;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+  }
 }
 select option {
   background: #22223b;

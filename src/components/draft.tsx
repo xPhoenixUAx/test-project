@@ -11,8 +11,8 @@ interface Tariff {
   buttonText?: string;
   sticker?: React.ReactNode;
   stickerSeller?: React.ReactNode;
-  titleAddon?: React.ReactNode;
   buttonVariant?: "primary" | "secondary" | "blackbutton";
+  titleAddon?: React.ReactNode;
 }
 
 const tariffs: Tariff[] = [
@@ -74,18 +74,18 @@ const tariffs: Tariff[] = [
 
 export default function Tariffs() {
   return (
-    <section className="container-mobile container-desktop py-10">
-      <h2 className="text-[24px] uppercase lg:text-4xl font-bold mb-4 text-center w-full">
+    <section className="container-mobile container-desktop py-10 grid gap-6 md:grid-cols-3">
+      <h2 className="text-[24px] uppercase md:text-4xl font-bold mb-4 text-center w-full">
         Тарифы
       </h2>
-      <div className="grid gap-10 lg:grid-cols-3">
+      <div className="grid gap-10 md:grid-cols-3">
         {tariffs.map((tariff, idx) => (
           <UICard
             key={tariff.title}
             title={tariff.title}
             variant={tariff.variant}
             className={
-              "flex flex-col justify-between min-h-[600px] rounded-[28px] relative " +
+              "flex flex-col justify-between h-full rounded-[28px] relative " +
               (idx === 1 ? "text-black" : "text-white")
             }
             titleClassName={idx === 1 || idx === 2 ? "mt-[23px]" : undefined}
