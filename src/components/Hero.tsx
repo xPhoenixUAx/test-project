@@ -52,7 +52,6 @@ export default function Hero() {
           </h1>
         </div>
       </div>
-      {/* Mobile flex */}
       <div className="flex flex-col items-center text-center lg:hidden">
         <Image
           src={heroImageMob}

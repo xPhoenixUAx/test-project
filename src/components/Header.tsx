@@ -113,7 +113,6 @@ export default function Header() {
         </UIButton>
       </div>
 
-      {/* Мобільні кнопки */}
       <div className="flex items-center gap-3 lg:hidden">
         <LangSelect lang={lang} setLang={setLang} />
         <button
@@ -125,7 +124,6 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Мобільне меню */}
       <nav
         className={`fixed top-0 right-0 h-[50%] w-full max-w-lg bg-black/10 backdrop-blur-lg shadow-lg z-10 flex flex-col items-start pt-20 px-6 gap-6 transition-transform duration-300 lg:hidden ${
           menuOpen ? "translate-y-0" : "-translate-y-full"
@@ -143,7 +141,6 @@ export default function Header() {
         ))}
       </nav>
 
-      {/* Overlay */}
       {menuOpen && (
         <div
           className="fixed inset-0 bg-black/30 z-0 lg:hidden"
